@@ -85,12 +85,12 @@ background-color: hsl(31, 77%, 52%);
     }
 
     /* responsive using media query for large desktop */
-    @media (min-width:1025px){
+    @media (min-width:1024px){
       .container{
         flex-direction: row;
         flex-wrap:nowrap;
-        height:442px;
-        width: 70%;
+        height:542px;
+        width: 67%;
       }
       .container1{
         border-radius: 10px 0 0 10px;
