@@ -1,0 +1,101 @@
+*{
+      margin: 0;
+      padding:0;
+      
+      box-sizing: border-box;
+    }
+    body{
+    min-width: 375px;
+    width: 100wh;
+      height: 100vh;
+      Font-size: 15px;
+      display: grid;
+      place-items: center;
+      background-color: hsl(0, 0%, 95%)
+    }
+    .container{
+      width: 300px;
+      height: 1102px;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px;
+    }
+    .container1,.container2,.container3{
+      /* height: 33.3%; */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content:space-around;
+      flex-grow: 1;
+    
+padding:30px;
+background-color: hsl(31, 77%, 52%);
+    }
+   .container1{
+     border-radius: 10px 10px 0 0;
+  
+   }
+    .container2{
+      background-color: hsl(184, 100%, 22%);
+    }
+    .container3{
+      background-color: hsl(179, 100%, 13%);
+     border-radius: 0 0 10px 10px;
+    }
+    h1{
+      text-transform: uppercase;
+      font: 700 1.5em Big Shoulders Display;
+      color: hsl(0, 0%, 95%);
+    }
+    p{
+      font:400 15px Lexend Deca;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    button{
+      height: 30px;
+      width: 100px;
+      border-radius: 30px;
+      border: none;
+      outline:none;
+      background-color: hsl(0, 0%, 95%);
+      font:400 12px Lexend Deca;
+      cursor: pointer;
+    }
+    .container1 span{
+      color: hsl(31, 77%, 52%);
+    }
+    .container2 span{
+      color: hsl(184, 100%, 22%);
+    }
+    .container3 span{
+      color: hsl(179, 100%, 13%);
+    }
+
+    /* responsive using media query for tab and ipad */
+    @media (min-width:700px)and (max-width:1024px) {
+      .container{
+        flex-direction: row;
+      /* height: 80%;
+      min-height: 619px; */
+      width: 80%;
+      flex-wrap: wrap;
+      }
+    }
+
+    /* responsive using media query for large desktop */
+    @media (min-width:1025px){
+      .container{
+        flex-direction: row;
+        flex-wrap:nowrap;
+        height:442px;
+        width: 70%;
+      }
+      .container1{
+        border-radius: 10px 0 0 10px;
+      }
+      .container3{
+        border-radius: 0 10px 10px 0;
+      }
+    }
